@@ -37,7 +37,7 @@
             this.txt_goals = new System.Windows.Forms.TextBox();
             this.txt_poistionplayer = new System.Windows.Forms.TextBox();
             this.txt_nameplayer = new System.Windows.Forms.TextBox();
-            this.txt_idplayer = new System.Windows.Forms.TextBox();
+            this.txt_tshirtNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,9 +46,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.Size = new System.Drawing.Size(115, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Id Player";
+            this.label1.Text = "Tshirt Number";
             // 
             // label2
             // 
@@ -85,7 +85,7 @@
             this.bt_addplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_addplayer.Location = new System.Drawing.Point(177, 259);
             this.bt_addplayer.Name = "bt_addplayer";
-            this.bt_addplayer.Size = new System.Drawing.Size(75, 23);
+            this.bt_addplayer.Size = new System.Drawing.Size(75, 28);
             this.bt_addplayer.TabIndex = 4;
             this.bt_addplayer.Text = "Add Player";
             this.bt_addplayer.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.bt_cacel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cacel.Location = new System.Drawing.Point(402, 259);
             this.bt_cacel.Name = "bt_cacel";
-            this.bt_cacel.Size = new System.Drawing.Size(75, 23);
+            this.bt_cacel.Size = new System.Drawing.Size(75, 28);
             this.bt_cacel.TabIndex = 5;
             this.bt_cacel.Text = "Cancel";
             this.bt_cacel.UseVisualStyleBackColor = true;
@@ -125,20 +125,20 @@
             this.txt_nameplayer.Size = new System.Drawing.Size(178, 24);
             this.txt_nameplayer.TabIndex = 8;
             // 
-            // txt_idplayer
+            // txt_tshirtNumber
             // 
-            this.txt_idplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idplayer.Location = new System.Drawing.Point(177, 24);
-            this.txt_idplayer.Name = "txt_idplayer";
-            this.txt_idplayer.Size = new System.Drawing.Size(178, 24);
-            this.txt_idplayer.TabIndex = 9;
+            this.txt_tshirtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tshirtNumber.Location = new System.Drawing.Point(177, 24);
+            this.txt_tshirtNumber.Name = "txt_tshirtNumber";
+            this.txt_tshirtNumber.Size = new System.Drawing.Size(178, 24);
+            this.txt_tshirtNumber.TabIndex = 9;
             // 
             // AddPlayerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 339);
-            this.Controls.Add(this.txt_idplayer);
+            this.Controls.Add(this.txt_tshirtNumber);
             this.Controls.Add(this.txt_nameplayer);
             this.Controls.Add(this.txt_poistionplayer);
             this.Controls.Add(this.txt_goals);
@@ -166,6 +166,6 @@
         private System.Windows.Forms.TextBox txt_goals;
         private System.Windows.Forms.TextBox txt_poistionplayer;
         private System.Windows.Forms.TextBox txt_nameplayer;
-        private System.Windows.Forms.TextBox txt_idplayer;
+        private System.Windows.Forms.TextBox txt_tshirtNumber;
     }
 }

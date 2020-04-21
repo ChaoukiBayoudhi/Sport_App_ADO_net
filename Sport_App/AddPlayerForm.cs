@@ -30,21 +30,25 @@ namespace Sport_App
                 con.Open();
                 //srep 3: create Command
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "insert into Player values(@Id,@name,@position,@goals)";
-                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into Player values(@tshirtNumer,@name,@position,@goals)";
+                cmd.CommandType = CommandType.Text;//deault value is Text
                 cmd.Connection = con;
+
+                //ou bien 
+                /* cmd = new SqlCommand("insert into Player values(@Id,@name,@position,@goals)", con);*/
                 //affectation d'une valeur au premier paramètre @ID
-                /*cmd.Parameters.Add("@Id", SqlDbType.Int);
-                cmd.Parameters[0].Value = int.Parse(txt_idplayer.Text);
+                /*cmd.Parameters.Add("@tshirtNumer", SqlDbType.Int);
+                cmd.Parameters[0].Value = int.Parse(txt_tshirtNumber.Text);
                 */
                 //les deux lignes precédentes peuvent être remplacer par la ligne qui suit
-                cmd.Parameters.AddWithValue("@Id", int.Parse(txt_idplayer.Text));
+                cmd.Parameters.AddWithValue("@tshirtNumer", int.Parse(txt_tshirtNumber.Text));
 
                 cmd.Parameters.AddWithValue("@name", txt_nameplayer.Text);
                 cmd.Parameters.AddWithValue("@position", txt_poistionplayer.Text);
                 cmd.Parameters.AddWithValue("@goals", int.Parse(txt_goals.Text));
                 //step 4 :execute command
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery(); //case of insert or update or delete
+                /*cmd.ExecuteReader();// case of select*/
                 MessageBox.Show("Player has been added...");
 
             }

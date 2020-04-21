@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmb_FindBy = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_CriterionValue = new System.Windows.Forms.TextBox();
             this.bt_Find = new System.Windows.Forms.Button();
+            this.txt_CriterionValue = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmb_FindBy = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +75,44 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criterion";
             // 
+            // bt_Find
+            // 
+            this.bt_Find.ForeColor = System.Drawing.Color.Black;
+            this.bt_Find.Location = new System.Drawing.Point(549, 89);
+            this.bt_Find.Name = "bt_Find";
+            this.bt_Find.Size = new System.Drawing.Size(75, 30);
+            this.bt_Find.TabIndex = 2;
+            this.bt_Find.Text = "Find";
+            this.bt_Find.UseVisualStyleBackColor = true;
+            this.bt_Find.Click += new System.EventHandler(this.bt_Find_Click);
+            // 
+            // txt_CriterionValue
+            // 
+            this.txt_CriterionValue.Location = new System.Drawing.Point(501, 39);
+            this.txt_CriterionValue.Name = "txt_CriterionValue";
+            this.txt_CriterionValue.Size = new System.Drawing.Size(140, 24);
+            this.txt_CriterionValue.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(351, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Criterion Value";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(23, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Find By";
+            // 
             // cmb_FindBy
             // 
             this.cmb_FindBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -89,44 +127,6 @@
             this.cmb_FindBy.Size = new System.Drawing.Size(140, 26);
             this.cmb_FindBy.TabIndex = 0;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(23, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Find By";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(351, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Criterion Value";
-            // 
-            // txt_CriterionValue
-            // 
-            this.txt_CriterionValue.Location = new System.Drawing.Point(501, 39);
-            this.txt_CriterionValue.Name = "txt_CriterionValue";
-            this.txt_CriterionValue.Size = new System.Drawing.Size(140, 24);
-            this.txt_CriterionValue.TabIndex = 1;
-            // 
-            // bt_Find
-            // 
-            this.bt_Find.ForeColor = System.Drawing.Color.Black;
-            this.bt_Find.Location = new System.Drawing.Point(549, 89);
-            this.bt_Find.Name = "bt_Find";
-            this.bt_Find.Size = new System.Drawing.Size(75, 30);
-            this.bt_Find.TabIndex = 2;
-            this.bt_Find.Text = "Find";
-            this.bt_Find.UseVisualStyleBackColor = true;
-            this.bt_Find.Click += new System.EventHandler(this.bt_Find_Click);
-            // 
             // ShowPlayersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +137,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ShowPlayersForm";
             this.Text = "ShowPlayersForm";
+            this.Load += new System.EventHandler(this.ShowPlayersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
